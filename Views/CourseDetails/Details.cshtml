@@ -1,0 +1,58 @@
+﻿@model Schaefer4200.Models.CourseDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CourseDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.courseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.courseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.location)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.coursedetailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
