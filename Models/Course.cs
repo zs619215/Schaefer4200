@@ -8,6 +8,12 @@ namespace Schaefer4200.Models
     public class Course
     {
         public int courseID { get; set; }
+
+
+
+        [Display (Name="Course Name")]
+        [Required(ErrorMessage = "Course name is required")]
+        [stringLength(20)]
         public string courseName { get; set; }
 
         public int instructorID { get; set; }

@@ -35,7 +35,7 @@ namespace Schaefer4200.Models
         
         [Display (Name="Mobile Phone Number")]
         [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^(\(\d{3}\) |\d{3}-)\d{3}-\d{4}$"), 
+        [RegularExpression(@"^(\(\d{3}\) |\d{3}-)\d{3}-\d{4}$", 
             ErrorMessage = "Phone numbers must be in the format (xxx) xxx-xxxx or xxx-xxx-xxxx")]
        
         //need to fix this error
